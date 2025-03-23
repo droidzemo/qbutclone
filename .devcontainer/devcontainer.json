@@ -1,6 +1,6 @@
 {
 	"name": "Ubuntu",
-	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"image": "mcr.microsoft.com/vscode/devcontainers/go",
 	"features": {
 		"ghcr.io/devcontainers/features/hugo:1": {
 			"extended": true
