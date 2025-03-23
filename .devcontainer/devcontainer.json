@@ -1,57 +1,11 @@
-
 {
-    "name": "Ubuntu",
-    "image": "mcr.microsoft.com/devcontainers/base:jammy",
-    "features": {
-        "ghcr.io/devcontainers/features/hugo:1": {
-            "extended": true
-        },
-        "ghcr.io/devcontainers-contrib/features/actionlint:1": {},
-        "ghcr.io/devcontainers-contrib/features/gh-cli:1": {}
-    },
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "eliostruyf.vscode-front-matter"
-            ]
-        }
-    },
-
-"forwardPorts": [1313],
-
-    "postCreateCommand": "git submodule update --init"
-}
-
-this is my devcontainer.json file
-
-how cna i add go to it
-
-Edit
-I can help you add Go to your devcontainer.json file. You can use the Go feature from the devcontainers features collection. Here's how you would modify your file:
-
-json
-
-Copy
-{
-	"name": "Ubuntu",
-	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
 	"features": {
 		"ghcr.io/devcontainers/features/hugo:1": {
 			"extended": true
 		},
 		"ghcr.io/devcontainers-contrib/features/actionlint:1": {},
 		"ghcr.io/devcontainers-contrib/features/gh-cli:1": {},
-		"ghcr.io/devcontainers/features/go:1": {}
-	},
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"eliostruyf.vscode-front-matter"
-			]
-		}
-	},
-	
-	"forwardPorts": [1313],
-	
-	"postCreateCommand": "git submodule update --init"
+    "ghcr.io/devcontainers/features/go:1": {}
+	}
 }
